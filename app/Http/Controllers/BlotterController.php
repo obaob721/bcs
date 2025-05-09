@@ -15,6 +15,7 @@ class BlotterController extends Controller
     public function addBlotter(Request $request){
         $request->validate([
             'citizen_id' => ['required', 'exists:citizens,citizen_id'],
+            'bloter_status_id' => ['required', 'exists:blotter_statuses,bloter_status_id'],
             'complainant' => ['required', 'string', 'max:255'],
             'incident_type' => ['required', 'string', 'max:255'],
             'location' => ['required', 'string', 'max:255'],
@@ -25,6 +26,7 @@ class BlotterController extends Controller
 
         $blotter = Blotter::create([
             'citizen_id' => $request->citizen_id,
+            'blotter_status_id'  => $request->blotter_status_id,
             'complainant' => $request->complainant,
             'incident_type' => $request->incident_type,
             'location' => $request->location,
@@ -38,6 +40,7 @@ class BlotterController extends Controller
     public function editBlotter(Request $request, $id){
         $request->validate([
             'citizen_id' => ['required', 'exists:citizens,citizen_id'],
+            'bloter_status_id' => ['required', 'exists:blotter_statuses,bloter_status_id'],
             'complainant' => ['required', 'string', 'max:255'],
             'incident_type' => ['required', 'string', 'max:255'],
             'location' => ['required', 'string', 'max:255'],
@@ -54,6 +57,7 @@ class BlotterController extends Controller
 
         $blotter->update([
             'citizen_id' => $request->citizen_id,
+            'blotter_status_id'  => $request->blotter_status_id,
             'complainant' => $request->complainant,
             'incident_type' => $request->incident_type,
             'location' => $request->location,

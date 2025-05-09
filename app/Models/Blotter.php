@@ -19,6 +19,9 @@ class Blotter extends Model
         'blotter_status_id'
     ];
 
+    protected $table = 'blotter';
+
+
     public function citizen()
     {
         return $this->belongsTo(Citizen::class);

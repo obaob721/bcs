@@ -13,4 +13,7 @@ class Report extends Model
         'blotter_id',
         'report_offense_id'
     ];
+
+    protected $table = 'report';
+
 }

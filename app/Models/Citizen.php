@@ -17,5 +17,6 @@ class Citizen extends Model
         'address',
     ];
 
-  
+    protected $table = 'citizen';
+
 }
