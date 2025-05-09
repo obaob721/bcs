@@ -13,11 +13,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('report_offenses', function (Blueprint $table) {
-            $table->id();
+            $table->id(); // This is the correct way to add an auto-increment primary key column
             $table->string('name');
             $table->timestamps();
         });
 
+        // Inserting sample data
         $reportOffenses = [
             ['name' => 'Minor'],
             ['name' => 'Moderate'],

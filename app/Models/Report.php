@@ -14,6 +14,13 @@ class Report extends Model
         'report_offense_id'
     ];
 
-    protected $table = 'report';
+    public function blotter()
+    {
+        return $this->belongsTo(Blotter::class, 'blotter_id', 'blotter_id');
+    }
 
+    public function reportOffense()
+    {
+        return $this->belongsTo(ReportOffense::class, 'report_offense_id', 'report_offense_id');
+    }
 }
