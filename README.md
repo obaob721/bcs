@@ -10,15 +10,15 @@ b. Register
 
 c.Logout
 
-👥 Users Page
+👥 Users Page                                Roles                                UserStatus
+                                        
+1.1 Get Users                                 1.1.1 Get Roles                      1.1.1.1 Get User Statuses
 
-1.1 Get Users
+1.2 Add User                                  1.1.2 Add Role                       1.1.1.2 Add User Status
 
-1.2 Add User
+1.3 Edit Existing User                        1.1.3 Edit Role                      1.1.1.3 Edit User Status
 
-1.3 Edit Existing User
-
-1.4 Delete User
+1.4 Delete User                               1.1.4 Delete Role                    1.1.1.4 Delete User Status
 
 🏡 Citizens Page
 
@@ -30,7 +30,7 @@ c.Logout
 
 2.4 Delete Citizen
 
-📝 Blotters Page
+📝 Blotters Page                            
 
 3.1 Get Blotters 
 
