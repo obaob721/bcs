@@ -4,49 +4,49 @@
 
 🔐 Authentication
 
-Login
+a. Login
 
-Register
+b. Register
 
-Logout
+c.Logout
 
 👥 Users Page
 
-Get Users
+1.1 Get Users
 
-Add User
+1.2 Add User
 
-Edit Existing User
+1.3 Edit Existing User
 
-Delete User
+1.4 Delete User
 
 🏡 Citizens Page
 
-Get Citizens
+2.1 Get Citizens
 
-Add Citizen
+2.2 Add Citizen
 
-Edit Citizen 
+2.3 Edit Citizen 
 
-Delete Citizen
+2.4 Delete Citizen
 
 📝 Blotters Page
 
-Get Blotters 
+3.1 Get Blotters 
 
-Add Blotter
+3.2 Add Blotter
 
-Edit Blotter
+3.3 Edit Blotter
 
-Delete Blotter
+3.4 Delete Blotter
 
 📑 Reports Page
 
-Get Reports 
+4.1 Get Reports 
 
-Add Report
+4.2 Add Report
 
-Edit Report
+4.3 Edit Report
 
-Delete Report
+4.4 Delete Report
 
