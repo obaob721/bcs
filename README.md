@@ -17,47 +17,24 @@ c.Logout
 1.3 Edit Existing User                                             
 1.4 Delete User 
 
-Roles 
-
- 1.1.1 Get Roles 
- 1.1.2 Add Role
- 1.1.3 Edit Role
- 1.1.4 Delete Role 
-
- User Satuses
- 
-1.1.1.1 Get User Statuses
-1.1.1.2 Add User Status
-1.1.1.3 Edit User Status
-1.1.1.4 Delete User Status
-
 🏡 Citizens Page
 
 2.1 Get Citizens
-
 2.2 Add Citizen
-
 2.3 Edit Citizen 
-
 2.4 Delete Citizen
 
 📝 Blotters Page                            
 
 3.1 Get Blotters 
-
 3.2 Add Blotter
-
 3.3 Edit Blotter
-
 3.4 Delete Blotter
 
 📑 Reports Page
 
 4.1 Get Reports 
-
 4.2 Add Report
-
 4.3 Edit Report
-
 4.4 Delete Report
 
