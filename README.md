@@ -1,34 +1,44 @@
+📋 Project Features
+🔐 Authentication
+Login
 
+Register
 
-                                                                                     PROJECT FEATURE LISTS
+Logout
 
+👥 Users Management
+Fetch user data
 
+Add new user
 
-Authentication
-a. Login
-b. Register
-c. Logout
+Edit existing user
 
-Users Page
-1.1 Get Users Data
-1.2 Add User Data
-1.3 Edit User Data
-1.4 Delete User Data
+Delete user
 
-Citizens Page
-2.1 Get Citizens Data
-2.2 Add Citizen Data
-2.3 Edit Citizen Data
-2.4 Delete Citizen Data
+🏡 Citizens Management
+Fetch citizens data
 
-Blotters Page
-3.1 Get Blotters Data
-3.2 Add Blotter Data
-3.3 Edit Blotter Data
-3.4 Delete Blotter Data
+Add new citizen
 
-Reports Page
-3.1 Get Reports Data
-3.2 Add Report Data
-3.3 Edit Report Data
-3.4 Delete Report Data
+Edit citizen information
+
+Delete citizen
+
+📝 Blotters Management
+Fetch blotters data
+
+Add new blotter
+
+Edit blotter information
+
+Delete blotter
+
+📑 Reports Management
+Fetch reports data
+
+Add new report
+
+Edit report information
+
+Delete report
+
