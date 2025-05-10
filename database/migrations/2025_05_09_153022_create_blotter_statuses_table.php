@@ -8,9 +8,7 @@ use App\Models\BlotterStatus;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
+    
     public function up(): void
     {
         Schema::create('blotter_statuses', function (Blueprint $table) {

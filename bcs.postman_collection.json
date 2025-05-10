@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b0932fa0-8ec2-4de9-90a2-5f6a0e7e9547",
+		"_postman_id": "5d1eadce-fe61-47fc-833d-dc10aafd477f",
 		"name": "bcs",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "44747766"
@@ -63,7 +63,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "HwdXd1DPLjZwYmJ45jcOfslZ8I5jxf6NnAsXlW3Q88480d1b"
+								"token": "2SZTCOnhORTAwME03iHSicSykdjWqFdmkOxzlXeJ75136f36"
 							}
 						},
 						"method": "POST",
@@ -109,7 +109,12 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": ""
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": "http://127.0.0.1:8000/api/get-users"
 					},
@@ -118,8 +123,29 @@
 				{
 					"name": "Add User",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "HwdXd1DPLjZwYmJ45jcOfslZ8I5jxf6NnAsXlW3Q88480d1b"
+							}
+						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": ""
 					},
 					"response": []
@@ -143,7 +169,12 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": ""
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
 						"url": "http://127.0.0.1:8000/api/edit-user/2"
 					},
@@ -152,9 +183,296 @@
 				{
 					"name": "Delete User",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "HwdXd1DPLjZwYmJ45jcOfslZ8I5jxf6NnAsXlW3Q88480d1b"
+							}
+						},
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Citizens Page",
+			"item": [
+				{
+					"name": "Get All Citizens",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2SZTCOnhORTAwME03iHSicSykdjWqFdmkOxzlXeJ75136f36"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/get-citizens"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Ctizen",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2SZTCOnhORTAwME03iHSicSykdjWqFdmkOxzlXeJ75136f36"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"first_name\": \"John\",\r\n    \"last_name\": \"Doe\",\r\n    \"age\": 30,\r\n    \"phonenumber\": \"09123456789\",\r\n    \"address\": \"123 Main St\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/add-citizen"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Citizen",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2SZTCOnhORTAwME03iHSicSykdjWqFdmkOxzlXeJ75136f36"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"first_name\": \"Anna\",\r\n    \"last_name\": \"Taraya\",\r\n    \"age\": 20,\r\n    \"phonenumber\": \"09123123123\",\r\n    \"address\": \"Minglanilla, Cebu\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/edit-citizen/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Citizen",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2SZTCOnhORTAwME03iHSicSykdjWqFdmkOxzlXeJ75136f36"
+							}
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/delete-citizen/3"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blotter Page",
+			"item": [
+				{
+					"name": "Get All Blotters",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2SZTCOnhORTAwME03iHSicSykdjWqFdmkOxzlXeJ75136f36"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Blotter",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "2SZTCOnhORTAwME03iHSicSykdjWqFdmkOxzlXeJ75136f36"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n        \"citizen_id\": 2,\r\n        \"complainant\": \"Guian Parba\",\r\n        \"incident_type\": \"Robbery\",\r\n        \"location\": \"Lungsod, Minglanilla.\",\r\n        \"witness_1\": \"N/A\",\r\n        \"witness_2\": \"N/A\",\r\n        \"blotter_status_id\": 1\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/add-blotter"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Blotter",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Blotter",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reports Page",
+			"item": [
+				{
+					"name": "Get All Reports",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Report",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Report",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Report",
+					"request": {
+						"method": "DELETE",
+						"header": []
 					},
 					"response": []
 				}

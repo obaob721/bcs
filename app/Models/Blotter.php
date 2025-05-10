@@ -24,4 +24,8 @@ class Blotter extends Model
         return $this->belongsTo(Citizen::class);
     }    
 
+    public function BlotterStatus()
+    {
+        return $this->belongsTo(BlotterStatus::class);
+    }    
 }
