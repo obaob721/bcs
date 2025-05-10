@@ -15,14 +15,17 @@ c.Logout
 1.1 Get Users                                                    
 1.2 Add User                                                        
 1.3 Edit Existing User                                             
-1.4 Delete User                                               
+1.4 Delete User 
+
 Roles 
+
  1.1.1 Get Roles 
  1.1.2 Add Role
  1.1.3 Edit Role
  1.1.4 Delete Role 
 
  User Satuses
+ 
 1.1.1.1 Get User Statuses
 1.1.1.2 Add User Status
 1.1.1.3 Edit User Status
