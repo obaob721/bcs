@@ -1,4 +1,4 @@
-📋 Project Features
+                                                                            📋 Project Features
 
 
 
@@ -10,39 +10,43 @@ Register
 
 Logout
 
-👥 Users Management
-Fetch user data
+👥 Users Page
 
-Add new user
+Get Users
 
-Edit existing user
+Add User
 
-Delete user
+Edit Existing User
 
-🏡 Citizens Management
-Fetch citizens data
+Delete User
 
-Add new citizen
+🏡 Citizens Page
 
-Edit citizen information
+Get Citizens
 
-Delete citizen
+Add Citizen
 
-📝 Blotters Management
-Fetch blotters data
+Edit Citizen 
 
-Add new blotter
+Delete Citizen
 
-Edit blotter information
+📝 Blotters Page
 
-Delete blotter
+Get Blotters 
 
-📑 Reports Management
-Fetch reports data
+Add Blotter
 
-Add new report
+Edit Blotter
 
-Edit report information
+Delete Blotter
 
-Delete report
+📑 Reports Page
+
+Get Reports 
+
+Add Report
+
+Edit Report
+
+Delete Report
 
