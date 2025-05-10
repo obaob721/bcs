@@ -16,11 +16,11 @@ class Report extends Model
 
     public function blotter()
     {
-        return $this->belongsTo(Blotter::class, 'blotter_id', 'blotter_id');
+        return $this->belongsTo(Blotter::class);
     }
 
     public function reportOffense()
     {
-        return $this->belongsTo(ReportOffense::class, 'report_offense_id', 'report_offense_id');
+        return $this->belongsTo(ReportOffense::class);
     }
 }

@@ -16,8 +16,8 @@ class ReportController extends Controller
 
     public function addReport(Request $request){
         $request->validate([
-            'blotter_id' => ['required', 'exists:blotters,blotter_id'],
-            'report_offense_id' => ['required', 'exists:reportOffenses,report_offense_id'],
+            'blotter_id' => ['required', 'exists:blotters,id'],
+            'report_offense_id' => ['required', 'exists:report_offenses,id'],
         ]);
 
         $report = Report::create([
@@ -30,8 +30,8 @@ class ReportController extends Controller
 
     public function editReport(Request $request, $id){
         $request->validate([
-            'blotter_id' => ['required', 'exists:blotters,blotter_id'],
-            'report_offense_id' => ['required', 'exists:reportOffenses,report_offense_id'],
+            'blotter_id' => ['required', 'exists:blotters,id'],
+            'report_offense_id' => ['required', 'exists:report_offenses,id'],
         ]);
 
         $report = Report::find($id);

@@ -63,7 +63,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "2SZTCOnhORTAwME03iHSicSykdjWqFdmkOxzlXeJ75136f36"
+								"token": "nkMKMJ7m4uyLDL134eNLsBG0fR8RlIvyuy8kfboZ92acc11e"
 							}
 						},
 						"method": "POST",
@@ -352,7 +352,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "2SZTCOnhORTAwME03iHSicSykdjWqFdmkOxzlXeJ75136f36"
+								"token": "nkMKMJ7m4uyLDL134eNLsBG0fR8RlIvyuy8kfboZ92acc11e"
 							}
 						},
 						"method": "GET",
@@ -371,7 +371,8 @@
 									"language": "json"
 								}
 							}
-						}
+						},
+						"url": "http://127.0.0.1:8000/api/get-blotters"
 					},
 					"response": []
 				},
@@ -381,7 +382,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "2SZTCOnhORTAwME03iHSicSykdjWqFdmkOxzlXeJ75136f36"
+								"token": "nkMKMJ7m4uyLDL134eNLsBG0fR8RlIvyuy8kfboZ92acc11e"
 							}
 						},
 						"method": "POST",
@@ -394,7 +395,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\r\n        \"citizen_id\": 2,\r\n        \"complainant\": \"Guian Parba\",\r\n        \"incident_type\": \"Robbery\",\r\n        \"location\": \"Lungsod, Minglanilla.\",\r\n        \"witness_1\": \"N/A\",\r\n        \"witness_2\": \"N/A\",\r\n        \"blotter_status_id\": 1\r\n\r\n\r\n\r\n}",
+							"raw": "{\r\n\r\n        \"citizen_id\": 1,\r\n        \"blotter_status_id\": 1,\r\n        \"complainant\": \"Guian Parba\",\r\n        \"incident_type\": \"Robbery\",\r\n        \"location\": \"Lungsod, Minglanilla.\",\r\n        \"witness_1\": \"N/A\",\r\n        \"witness_2\": \"N/A\"\r\n        \r\n\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -408,16 +409,60 @@
 				{
 					"name": "Edit Blotter",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "nkMKMJ7m4uyLDL134eNLsBG0fR8RlIvyuy8kfboZ92acc11e"
+							}
+						},
 						"method": "PUT",
-						"header": []
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"citizen_id\": 1,\r\n        \"blotter_status_id\": 1,\r\n        \"complainant\": \"Guian Sumbi\",\r\n        \"incident_type\": \"Robbery\",\r\n        \"location\": \"Lungsod, Minglanilla.\",\r\n        \"witness_1\": \"N/A\",\r\n        \"witness_2\": \"N/A\"\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/edit-blotter/2"
 					},
 					"response": []
 				},
 				{
 					"name": "Delete Blotter",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "nkMKMJ7m4uyLDL134eNLsBG0fR8RlIvyuy8kfboZ92acc11e"
+							}
+						},
 						"method": "DELETE",
-						"header": []
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/delete-blotter/1"
 					},
 					"response": []
 				}
@@ -432,6 +477,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "nkMKMJ7m4uyLDL134eNLsBG0fR8RlIvyuy8kfboZ92acc11e"
+							}
+						},
 						"method": "GET",
 						"header": [
 							{
@@ -448,31 +499,98 @@
 									"language": "json"
 								}
 							}
-						}
+						},
+						"url": "http://127.0.0.1:8000/api/get-reports"
 					},
 					"response": []
 				},
 				{
 					"name": "Add Report",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "nkMKMJ7m4uyLDL134eNLsBG0fR8RlIvyuy8kfboZ92acc11e"
+							}
+						},
 						"method": "POST",
-						"header": []
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"blotter_id\": 2,\r\n    \"report_offense_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/add-report"
 					},
 					"response": []
 				},
 				{
 					"name": "Edit Report",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "nkMKMJ7m4uyLDL134eNLsBG0fR8RlIvyuy8kfboZ92acc11e"
+							}
+						},
 						"method": "PUT",
-						"header": []
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"blotter_id\": 2,\r\n    \"report_offense_id\": 2\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/edit-report/2"
 					},
 					"response": []
 				},
 				{
 					"name": "Delete Report",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "nkMKMJ7m4uyLDL134eNLsBG0fR8RlIvyuy8kfboZ92acc11e"
+							}
+						},
 						"method": "DELETE",
-						"header": []
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/delete-report/2"
 					},
 					"response": []
 				}
