@@ -8,7 +8,7 @@ a. Login
 
 b. Register
 
-c.Logout
+c. Logout
 
 👥 Users Page                                                              
                                         
